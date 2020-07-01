@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <div class="row">
+    <input
+      type="text"
+      placeholder="What needs to be done?"
+      [(ngModel)]="title"
+      [ngStyle]="{'margin-right': '1em'}"
+    />
+    <button (click)="addItem()">
+      >>
+    </button>
+  </div>
+
+  <ul *ngIf="todoList | async as todoItems"
+    class="todo-list"
+  >
+    <li *ngFor="let todo of todoItems" (click)="markItem(todo.id)">
+      <label>
+        <input
+          type="checkbox"
+          name="{{todo.completed}}"
+          id="{{todo.id}}"
+          [checked]="!!todo.completed"
+        >
+        <span>{{todo.title}}</span>
+      </label>
+      <button class="button button-outline">
+        X
+      </button>
+    </li>
+  </ul>
+</div>
