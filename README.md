@@ -24,5 +24,8 @@ The app will automatically reload if you change any of the source files.
 
 
 # What need to be done ?
-- Use localstorage to save To Do List;
-- Connect `services.ts` with `Stores`;
+- [X] CRUD ToDo;
+- [X] Integrate Stores, Reducers and Actions;
+- [X] Beautify with Milligram;
+- [ ] Use localstorage to save To Do List;
+- [ ] Connect `services.ts` with `Stores`;
