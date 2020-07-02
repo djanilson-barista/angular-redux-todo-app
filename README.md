@@ -24,7 +24,11 @@ The app will automatically reload if you change any of the source files.
 
 
 # What need to be done ?
-- [X] CRUD ToDo;
+- [-] CRUD ToDo;
+  - [X] Create;
+  - [X] List;
+  - [ ] Update;
+  - [ ] Delete;
 - [X] Integrate Stores, Reducers and Actions;
 - [X] Beautify with Milligram;
 - [ ] Use localstorage to save To Do List;
